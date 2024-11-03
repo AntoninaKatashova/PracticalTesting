@@ -3,7 +3,7 @@ name: TestRegression
 on:
   push:
     branches:
-      - 'lab**'
+      - 'lab_**'
   pull_request:
     types: [opened, reopened]
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r requirements.txt
       - run: |
-          if [ "${{github.event_name}}" = "schedule" ]; then
+          if [ "${{github.event_name}}" = "workflow_dispatch" ]; then
             export args="-m regression"
             export ENV="prod"
           else
