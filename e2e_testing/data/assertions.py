@@ -9,7 +9,6 @@ class Assertions(Base):
         super().__init__(page)
 
     def check_URL(self, uri, msg):
-        print(f'{host.get_base_url()}{uri}')
         expect(self.page).to_have_url(f'{host.get_base_url()}{uri}', timeout=10000), msg
 
 
@@ -45,7 +44,7 @@ class Assertions(Base):
         assert f"{uri}" in self.page.url, msg
 
 
-    def check_box_activated(self, locator, msg): #проверка что чек бокс поставлен
+    def check_box_activated(self, locator, msg): #проверка, что чек бокс поставлен
         loc = self.page.locator(locator)
         expect(loc).to_be_checked(), msg
 
