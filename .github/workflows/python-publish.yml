@@ -40,6 +40,9 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python3 -m pip install -r requirements.txt
+      - name: Install Playwright browsers
+        run: python3 -m playwright install
+
       - run: |
           if [ "${{github.event_name}}" = "workflow_dispatch" ]; then
             export ENV='${{github.event.inputs.environment}}'
