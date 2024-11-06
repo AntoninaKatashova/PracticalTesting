@@ -9,9 +9,43 @@ class MarketPage(Base):
     def __init__(self, page: Page):
         super().__init__(page)
         self.assertions = Assertions(page)
+
     def add_to_cart(self):
         self.click_element_by_index(Market.ADD_TO_CART, 0)
         self.click(Market.FOLLOW_TO_BASKET)
+
+    def sortByLoHi(self):
+        self.selector(Market.PRODUCT_SORTED, "lohi")
+        items = self.wait_for_all_elements(Market.PRODUCT_PRICE)
+        prices = [item.text_content() for item in items]
+
+        sorts = sorted(prices, key=lambda x: float(x[1:]))
+        assert prices == sorts
+
+    def sortByHiLo(self):
+        self.selector(Market.PRODUCT_SORTED, "hilo")
+        items = self.wait_for_all_elements(Market.PRODUCT_PRICE)
+        prices = [item.text_content() for item in items]
+
+        reverse = sorted(prices, key=lambda x: float(x[1:]), reverse=True)
+        assert prices == reverse
+
+    def sortByAZ(self):
+        self.selector(Market.PRODUCT_SORTED, "az")
+        items = self.wait_for_all_elements(Market.PRODUCT_NAME)
+        names = [item.text_content() for item in items]
+
+        sorts = sorted(names)
+        assert names == sorts
+
+    def sortByZA(self):
+        self.selector(Market.PRODUCT_SORTED, "za")
+        items = self.wait_for_all_elements(Market.PRODUCT_NAME)
+        names = [item.text_content() for item in items]
+
+        reverse = sorted(names, reverse=True)
+        assert names == reverse
+
 
     def checkout(self):
         self.click(Basket.CHECKOUT_BTN)
