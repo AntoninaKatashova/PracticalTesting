@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6bb36f73-edd7-40e8-8343-bdc7c35f1e13" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/Locators/basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/Locators/cart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e_testing/Locators/market.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/Locators/market.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e_testing/pages/market_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/market_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e_testing/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/reports/report.html" afterDir="false" />
@@ -29,6 +30,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.pytest for test_add_single_item.TestAddSingleItem.executor": "Run",
     "Python tests.pytest in test_sorted_items.py.executor": "Run",
     "Python.market_page.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -37,6 +39,30 @@
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="pytest for test_add_single_item.TestAddSingleItem" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PracticalTesting" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/e2e_testing/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_single_item.TestAddSingleItem&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_add_single_item.TestAddSingleItem" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
