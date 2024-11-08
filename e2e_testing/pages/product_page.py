@@ -21,3 +21,6 @@ class ProductPage(Base):
 
     def follow_to_cart(self):
         self.click(Product.FOLLOW_TO_CART)
+
+    def back_to_products(self):
+        self.click(Product.BACK_TO_PRODUCTS)

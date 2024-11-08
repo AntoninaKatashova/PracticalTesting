@@ -11,6 +11,9 @@ class MarketPage(Base):
         super().__init__(page)
         self.assertions = Assertions(page)
 
+    def follow_to_cart(self):
+        self.click(Market.FOLLOW_TO_CART)
+
     def sortByLoHi(self):
         self.selector(Market.PRODUCT_SORTED, "lohi")
         items = self.wait_for_all_elements(Market.PRODUCT_PRICE)
@@ -45,13 +48,12 @@ class MarketPage(Base):
 
 
     def get_list_of_product_urls(self):
-        product_urls_list = []
         product_links = self.page.query_selector_all("div[class='inventory_item_label'] > a")
         urls = [link.get_attribute('href') for link in product_links]
 
         urls_with_id = []
-        for url in urls:
-            url_index = random.randrange(0, len(urls))
+        for index, url in enumerate(urls):
+            url_index = index
             url = url.replace("#", "https://www.saucedemo.com/inventory-item.html")
             url = f"{url}?id={url_index}"
             urls_with_id.append(url)
@@ -64,16 +66,39 @@ class MarketPage(Base):
         product_url = product_urls_list[url_index]
         self.page.goto(product_url)
 
+    def open_page_product(self, product_url):
+        self.page.goto(product_url)
+
+    def open_random_products(self, number_of_items):
+        product_urls_list = self.get_list_of_product_urls()
+
+        k = 1
+        indexes = []
+        products_url = []
+
+        url_index = random.randrange(0, len(product_urls_list))
+        indexes.append(url_index)
+        products_url.append(product_urls_list[url_index])
+
+        while k < number_of_items:
+            url_index = random.randrange(0, len(product_urls_list))
+            if not url_index in indexes:
+                products_url.append(product_urls_list[url_index])
+                k += 1
+
+        return products_url
+
+
 
     def add_to_cart(self):
         self.click_element_by_index(Market.ADD_TO_CART, 0)
         self.click(Market.FOLLOW_TO_CART)
 
-    def checkout(self):
-        self.click(Cart.CHECKOUT_BTN)
-        self.input(Cart.FIRST_NAME, "Ivan")
-        self.input(Cart.LAST_NAME, "Ivanov")
-        self.input(Cart.ZIP, "123456")
-        self.click(Cart.CNT_BTN)
-        self.click(Cart.FINISH_BTN)
-        self.assertions.have_text(Cart.FINAL_TEXT, "Checkout: Complete!", "no")
+    # def checkout(self):
+    #     self.click(Cart.CHECKOUT_BTN)
+    #     self.input(Cart.FIRST_NAME, "Ivan")
+    #     self.input(Cart.LAST_NAME, "Ivanov")
+    #     self.input(Cart.ZIP, "123456")
+    #     self.click(Cart.CNT_BTN)
+    #     self.click(Cart.FINISH_BTN)
+    #     self.assertions.have_text(Cart.FINAL_TEXT, "Checkout: Complete!", "no")
