@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bb36f73-edd7-40e8-8343-bdc7c35f1e13" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/Locators/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/Locators/checkout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/pages/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/checkout_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/test_values/checkout_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/test_values/checkout_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/tests/test_success_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/tests/test_success_buy_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
