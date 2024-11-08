@@ -72,7 +72,6 @@ class MarketPage(Base):
     def open_random_products(self, number_of_items):
         product_urls_list = self.get_list_of_product_urls()
 
-        k = 1
         indexes = []
         products_url = []
 
@@ -80,19 +79,23 @@ class MarketPage(Base):
         indexes.append(url_index)
         products_url.append(product_urls_list[url_index])
 
-        while k < number_of_items:
+        while True:
             url_index = random.randrange(0, len(product_urls_list))
-            if not url_index in indexes:
+            if not(url_index in indexes) and len(products_url) != number_of_items:
                 products_url.append(product_urls_list[url_index])
-                k += 1
+                indexes.append(url_index)
+            elif len(products_url) == number_of_items:
+                break
 
         return products_url
 
 
-
-    def add_to_cart(self):
-        self.click_element_by_index(Market.ADD_TO_CART, 0)
-        self.click(Market.FOLLOW_TO_CART)
+"""
+из примера
+"""
+    # def add_to_cart(self):
+    #     self.click_element_by_index(Market.ADD_TO_CART, 0)
+    #     self.click(Market.FOLLOW_TO_CART)
 
     # def checkout(self):
     #     self.click(Cart.CHECKOUT_BTN)

@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6bb36f73-edd7-40e8-8343-bdc7c35f1e13" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/Locators/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/Locators/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/cart_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e_testing/pages/market_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/market_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/pages/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/product_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e_testing/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/reports/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +30,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.pytest for test_add_multiple_items.TestAddMultipleItems.executor": "Debug",
+    "Python tests.pytest for test_add_multiple_items.TestAddMultipleItems.executor": "Run",
     "Python tests.pytest for test_add_multiple_items.TestAddSingleItem.executor": "Run",
     "Python tests.pytest for test_add_single_item.TestAddSingleItem.executor": "Run",
+    "Python tests.pytest for test_delete_one_item.TestDeleteOneItem.executor": "Run",
     "Python tests.pytest in test_sorted_items.py.executor": "Run",
     "Python.market_page.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -92,9 +94,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_delete_one_item.TestDeleteOneItem" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PracticalTesting" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/e2e_testing/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_delete_one_item.TestDeleteOneItem&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest for test_add_multiple_items.TestAddMultipleItems" />
+        <item itemvalue="Python tests.pytest for test_delete_one_item.TestDeleteOneItem" />
         <item itemvalue="Python tests.pytest for test_add_multiple_items.TestAddSingleItem" />
         <item itemvalue="Python tests.pytest for test_add_single_item.TestAddSingleItem" />
       </list>
@@ -117,16 +137,5 @@
       <updated>1730700231442</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/e2e_testing/pages/market_page.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
