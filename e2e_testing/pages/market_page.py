@@ -88,20 +88,3 @@ class MarketPage(Base):
                 break
 
         return products_url
-
-
-"""
-из примера
-"""
-    # def add_to_cart(self):
-    #     self.click_element_by_index(Market.ADD_TO_CART, 0)
-    #     self.click(Market.FOLLOW_TO_CART)
-
-    # def checkout(self):
-    #     self.click(Cart.CHECKOUT_BTN)
-    #     self.input(Cart.FIRST_NAME, "Ivan")
-    #     self.input(Cart.LAST_NAME, "Ivanov")
-    #     self.input(Cart.ZIP, "123456")
-    #     self.click(Cart.CNT_BTN)
-    #     self.click(Cart.FINISH_BTN)
-    #     self.assertions.have_text(Cart.FINAL_TEXT, "Checkout: Complete!", "no")

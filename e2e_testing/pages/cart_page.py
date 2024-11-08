@@ -34,3 +34,6 @@ class CartPage(Base):
 
         for name in item_names:
             self.click(Cart.REMOVE.replace('item-name', str.lower(name).replace(" ", "-")))
+
+    def click_checkout(self):
+        self.click(Cart.CHECKOUT_BTN)
