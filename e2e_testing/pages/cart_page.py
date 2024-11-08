@@ -28,3 +28,9 @@ class CartPage(Base):
         name_index = random.randrange(0, len(item_names))
 
         self.click(Cart.REMOVE.replace('item-name', str.lower(item_names[name_index]).replace(" ", "-")))
+
+    def remove_all_items(self):
+        item_names = [str(name.text_content()) for name in self.page.query_selector_all(Cart.CART_ITEM_NAME)]
+
+        for name in item_names:
+            self.click(Cart.REMOVE.replace('item-name', str.lower(name).replace(" ", "-")))
