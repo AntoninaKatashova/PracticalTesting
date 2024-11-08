@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bb36f73-edd7-40e8-8343-bdc7c35f1e13" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/e2e_testing/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/cart_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/pages/market_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/market_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/Locators/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/Locators/checkout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/pages/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/pages/checkout_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e_testing/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_testing/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/tests/test_success_buy_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/test_values/checkout_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/test_values/checkout_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e_testing/tests/test_success_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_testing/tests/test_success_buy_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +36,7 @@
     "Python tests.pytest for test_add_single_item.TestAddSingleItem.executor": "Run",
     "Python tests.pytest for test_delete_all_items.TestDeleteAllItems.executor": "Run",
     "Python tests.pytest for test_delete_one_item.TestDeleteOneItem.executor": "Run",
+    "Python tests.pytest for test_error_buy_products.TestErrorBuyProducts.executor": "Run",
     "Python tests.pytest for test_success_buy_product.TestBuyProduct.executor": "Run",
     "Python tests.pytest in test_sorted_items.py.executor": "Run",
     "Python.market_page.executor": "Run",
@@ -43,7 +46,7 @@
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_success_buy_product.TestBuyProduct">
+  <component name="RunManager" selected="Python tests.pytest for test_error_buy_products.TestErrorBuyProducts">
     <configuration name="pytest for test_add_multiple_items.TestAddMultipleItems" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PracticalTesting" />
       <option name="ENV_FILES" value="" />
@@ -58,23 +61,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_add_multiple_items.TestAddMultipleItems&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_add_multiple_items.TestAddSingleItem" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PracticalTesting" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/e2e_testing/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_multiple_items.TestAddSingleItem&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -112,6 +98,23 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_error_buy_products.TestErrorBuyProducts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PracticalTesting" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/e2e_testing/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_error_buy_products.TestErrorBuyProducts&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_success_buy_product.TestBuyProduct" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PracticalTesting" />
       <option name="ENV_FILES" value="" />
@@ -131,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_error_buy_products.TestErrorBuyProducts" />
         <item itemvalue="Python tests.pytest for test_success_buy_product.TestBuyProduct" />
         <item itemvalue="Python tests.pytest for test_delete_all_items.TestDeleteAllItems" />
         <item itemvalue="Python tests.pytest for test_add_multiple_items.TestAddMultipleItems" />
         <item itemvalue="Python tests.pytest for test_delete_one_item.TestDeleteOneItem" />
-        <item itemvalue="Python tests.pytest for test_add_multiple_items.TestAddSingleItem" />
       </list>
     </recent_temporary>
   </component>

@@ -9,10 +9,20 @@ class CheckoutPage(Base):
         super().__init__(page)
         self.assertions = Assertions(page)
 
-    def checkout(self, first_name, last_name, _zip, text, message):
+    def checkout_success(self, first_name, last_name, _zip, text, message):
         self.input(Checkout.FIRST_NAME, first_name)
         self.input(Checkout.LAST_NAME, last_name)
         self.input(Checkout.ZIP, _zip)
         self.click(Checkout.CNT_BTN)
         self.click(Checkout.FINISH_BTN)
         self.assertions.have_text(Checkout.FINAL_TEXT, text, message)
+
+    def checkout_error(self, first_name, last_name, _zip, text, message):
+        self.input(Checkout.FIRST_NAME, first_name)
+        self.input(Checkout.LAST_NAME, last_name)
+        self.input(Checkout.ZIP, _zip)
+        self.click(Checkout.CNT_BTN)
+        self.assertions.have_text(Checkout.ERROR_MESSAGE, text, message)
+
+    def follow_to_cart(self):
+        self.click(Checkout.FOLLOW_TO_CART)

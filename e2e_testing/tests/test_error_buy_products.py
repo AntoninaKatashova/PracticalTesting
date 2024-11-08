@@ -5,14 +5,15 @@ from e2e_testing.pages.market_page import MarketPage
 from e2e_testing.pages.product_page import ProductPage
 from e2e_testing.pages.cart_page import CartPage
 
-from e2e_testing.test_values.checkout_data import tests_with_correct_checkout
+from e2e_testing.test_values.checkout_data import tests_with_incorrect_checkout
 
 @pytest.mark.regression
 @pytest.mark.usefixtures('user_auth')
-class TestBuyProduct:
-    @pytest.mark.parametrize("first_name, last_name, _zip, text, message", tests_with_correct_checkout)
-    def test_success_buy_product(self, browser, first_name, last_name, _zip, text, message):
+class TestErrorBuyProducts:
+    @pytest.mark.parametrize("first_name, last_name, _zip, text, message", tests_with_incorrect_checkout)
+    def test_error_buy_products(self, browser, first_name, last_name, _zip, text, message):
         p = MarketPage(browser)
+        cart_page = CartPage(browser)
 
         number_of_items = 3
         actual_name = []
@@ -45,4 +46,7 @@ class TestBuyProduct:
 
         p = CheckoutPage(browser)
 
-        p.checkout_success(first_name, last_name, _zip, text, message)
+        p.checkout_error(first_name, last_name, _zip, text, message)
+        p.follow_to_cart()
+
+        cart_page.remove_all_items()
