@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bb36f73-edd7-40e8-8343-bdc7c35f1e13" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +24,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.pytest for test_add_multiple_items.TestAddMultipleItems.executor": "Run",
-    "Python tests.pytest for test_add_multiple_items.TestAddSingleItem.executor": "Run",
-    "Python tests.pytest for test_add_single_item.TestAddSingleItem.executor": "Run",
-    "Python tests.pytest for test_delete_all_items.TestDeleteAllItems.executor": "Run",
-    "Python tests.pytest for test_delete_one_item.TestDeleteOneItem.executor": "Run",
-    "Python tests.pytest for test_error_buy_products.TestErrorBuyProducts.executor": "Run",
-    "Python tests.pytest for test_success_buy_product.TestBuyProduct.executor": "Run",
-    "Python tests.pytest in test_sorted_items.py.executor": "Run",
-    "Python.market_page.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab__1",
-    "last_opened_file_path": "D:/Учеба/3 курс/Практикум/PracticalTesting",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.pytest for test_add_multiple_items.TestAddMultipleItems.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_add_multiple_items.TestAddSingleItem.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_add_single_item.TestAddSingleItem.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_delete_all_items.TestDeleteAllItems.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_delete_one_item.TestDeleteOneItem.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_error_buy_products.TestErrorBuyProducts.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_success_buy_product.TestBuyProduct.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_sorted_items.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.market_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab__1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Учеба/3 курс/Практикум/PracticalTesting&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.pytest for test_error_buy_products.TestErrorBuyProducts">
     <configuration name="pytest for test_add_multiple_items.TestAddMultipleItems" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PracticalTesting" />
