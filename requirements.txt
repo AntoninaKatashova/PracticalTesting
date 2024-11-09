@@ -1,0 +1,6 @@
+pytest
+playwright==1.48.0
+requests
+python-dotenv
+pytest-playwright
+pytest-html
