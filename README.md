@@ -4,3 +4,11 @@
 Каждая лабораторная находится в отдельной ветке с соответствующим названием.
 
 Выполняющий: Каташова Антонина Максимовна, группа - ФИТ-222
+
+
+Необходимые таблицы для 5 лабораторной:
+
+
+![image](https://github.com/user-attachments/assets/aec18a48-43a2-4342-be83-cfcd843ac535)
+
+![image](https://github.com/user-attachments/assets/42fe95f2-bf4a-4add-a95e-3e9ed5f2665d)
